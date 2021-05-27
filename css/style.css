@@ -13,6 +13,104 @@
     object-fit: cover;
 }
 body {
-	/* background-color: red; */
-	padding:30px;
+    background-color: #21212E;
+}
+.nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.main-nav {
+    display: flex;
+    height: 137px;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    width: 326px;
+    margin-right: 100px;
+}
+.nav-ul {
+    display: flex;
+    vertical-align: bottom;
+    justify-content: space-between;
+    width: 30%;
+    text-transform: uppercase;    
+}
+.nav-ul li a {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 800;
+    font-family: Poppins;
+    line-height: 26px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    max-width: 25%;
+    width: 100%;
+}
+.buttons button {
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #46C2FF;
+    color: #46C2FF;
+    background-color:#21212E;
+    height: 56px;
+    max-width: 185px;
+    width: 45%;
+    transition-duration: 100ms;
+    font-size: 20px;
+}
+button:hover {
+    background: linear-gradient(to bottom right,#46C2FF, #BD11FA);
+    border-style: none;
+    color: #fff;
+}
+.title {
+    display: flex;
+    justify-content: space-around;
+    height: 850px;
+    margin-top: 137px;
+}
+.title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+.title-text h3 {
+    font-size:20px; 
+    letter-spacing: 3px; 
+    line-height: 30px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 18px;
+}
+.title-text h1 {
+    font-size: 78px;
+    color: #46C2FF;
+    font-weight: 700;
+    line-height: 1;
+    margin-bottom: 53px;
+}
+.title-image {
+    background-image: url(..//images/Ellipse.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    max-width: 814px;
+    width: 100%;
+}
+.title-text button {
+    max-width: 279px;
+    width: 100%;
+    height: 80px;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 10px;
+    background-color: #46C2FF;
+}
+.events:hover{
+    box-shadow: 0 0 30px 5px #BD11FA;
 }
