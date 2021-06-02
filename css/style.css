@@ -70,6 +70,7 @@ button:hover {
     flex-direction: column;
     align-items: left;
     justify-content: center;
+    min-width: 320px;
 }
 .title-text h3 {
     font-size:20px; 
@@ -106,6 +107,30 @@ button:hover {
 .events:hover{
     box-shadow: 0 0 30px 5px #BD11FA;
 }
+/* Event start */
+.event-wrapper {
+    display: flex;
+    margin-top: 255px;
+    max-width: 1640px;
+    width: 100%;
+}
+.event-left {
+    background-image: url(../images/events.png);
+    position: relative;
+    max-width: 662px;
+    width: 100%;
+    height: 769px;
+    background-position: center;
+}
+.img-child {
+    position: absolute;
+    height: 228px;
+    bottom: 0;
+    left: 0;
+}
+
+
+
 
 
 /* Artist slider */
@@ -116,7 +141,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     width: 512px;
-    height: auto;
+    height: 431px;
     margin:30px;
     background-color: #20202C;
     border-style: none;
@@ -124,13 +149,12 @@ button:hover {
     border-radius: 5px;
 }
 .slider_item_title {
-    /* position: absolute; */
     display: flex;
     justify-content: space-around;
     align-items: left;
     width: 512px;
     width: 100%;
-    height: 64px;
+    /* height: 64px; */
 }
 .slider_item_title h4 {
     color: #46C2FF;
@@ -142,7 +166,7 @@ button:hover {
 .slider_item_title h5 {
     color: #46C2FF;
     font-size: 16px;
-    /* font-family: 'Mulish', sans-serif; */
+    font-family: 'Mulish', sans-serif;
     font-weight: 300;
     line-height: 35px;
 
@@ -156,10 +180,15 @@ button:hover {
 
 }
 .slider .slider_item img {
-    /* position: absolute; */
-    margin-top: 64px;
+    top: 0;
     width: 100%;
     height: 100%;
-    display: block;
+    /* display: block; */
     object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+    .title-image {
+        display: none;
+    }
 }
