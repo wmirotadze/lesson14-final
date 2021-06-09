@@ -23,10 +23,11 @@
     <!-- Navigation START -->
     <header>
       <nav class="main-nav">
+        <input id="nav-toggle" type="checkbox" />
         <a class="logo" href="index.html"
           ><img src="images/logo.svg" alt="logo"
         /></a>
-        <ul class="nav-ul">
+        <ul class="links">
           <li>
             <a class="nav-link" href="#">Home</a>
           </li>
@@ -40,10 +41,15 @@
             <a class="nav-link" href="#">Contact</a>
           </li>
         </ul>
-        <div class="buttons">
+        <div class="buttons links">
           <button>Sign In</button>
           <button>Sign Up</button>
         </div>
+        <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
       </nav>
     </header>
     <!-- Navigation END -->
@@ -324,9 +330,9 @@
 
     <!-- Footer START -->
     <footer>
-      <div class="footer-wrapper">
-        <div class="footer-logo"></div>
+      <div class="footer-wrapper">        
         <div class="footer">
+          <div class="footer-logo"></div>
           <div class="footer-contact">
             <h5>Contact</h5>
             <ul>
@@ -357,7 +363,7 @@
             </p>
           </div>
         </div>
-        <h6>© All Rights Reserved| Designed By KorolAlena</h6>
+        <div class="copyright">© All Rights Reserved| Designed By KorolAlena</div>>
       </div>
     </footer>
 
